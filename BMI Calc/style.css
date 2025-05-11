@@ -1,0 +1,60 @@
+
+h2{
+  text-align: center;
+  color: #020000;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('bmi img.webp')no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+span{
+  color: red;
+  font-size: 15px;
+}  
+
+.wrapper{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background: rgb(86, 128, 72);
+  border-radius: 5px;
+  box-shadow: rgb(40, 55, 75) 0px 20px 30px -10px;
+}
+
+input{
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+button {
+  color: white;
+  padding: px;
+  text-align: center;
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius: 10% 10% 10% 10%;
+  background: black;
+  display: block;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #020000;
+  background-color: greenyellow
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px #ffffff;
+  transform: translateY(4px);
+}

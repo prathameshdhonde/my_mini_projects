@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Serif+Text:ital@0;1&family=Lexend+Exa:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend Exa;
+}
+
+body {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXoxq8E9MtXI2V61bu-3OmRTjv-USkAyIO8w&s'),no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    border: 2px solid black;
+    background-color: rgb(205, 179, 29);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container input {
+    border: 2px solid black;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.input-container input:hover {
+    background-color: rgb(208, 231, 231);
+}
+
+.input-container input[type="text"] {
+    width: 70%;    
+}
+
+.input-container input[type="button"] {
+    background-color: rgb(237, 234, 228);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-color: rgb(9, 9, 4);
+    font-weight: 500;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover {
+    background-color: rgb(99, 7, 38);
+    color: rgb(203, 212, 218);
+}
+
+ul {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 450px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+    border: 0.125px solid black;
+    margin-block-end: 12px;
+    border-radius: 6px;
+    padding: 6px 12px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    transition: background-color 0.5s;
+}
+
+ul li:hover{
+    background-color: rgb(223, 230, 230);
+}
+
+
+ul li p {
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    background: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    border-radius: 50px;
+    color: #ff0000;
+    transition: background-color 0.5s;
+
+}
+.deleteBtn:hover {
+    background-color: rgb(230, 206, 206);
+    color: rgb(240, 14, 55);
+}
+
+
+.editBtn {
+    border-radius: 70px;
+    color: green;
+    transition: background-color 0.5s;
+}
+.editBtn:hover {
+    background-color: rgb(201, 223, 201);
+    color: green;
+}
+
+
+  /* completed button */
+  .completed p {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.completeCheck {
+    margin-right: 10px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.doneLabel {
+    display: none;
+    font-size: 12px;
+    color: rgb(3, 4, 3);
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.completed .doneLabel {
+    display: block;
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
